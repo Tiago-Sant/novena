@@ -116,19 +116,25 @@ export default function HomePage() {
             </div>
           )}
           <div className="flex flex-col gap-4 w-full">
-            <select className="border p-3 rounded-lg text-base" value={selectedNovena} onChange={(e) => setSelectedNovena(e.target.value)}>
-              <option value="carlo-acutis">Novena a Carlo Acutis</option>
-              <option value="santa-teresinha">Novena a Santa Teresinha</option>
-            </select>
+            <div>
+              <label className="text-sm block font-medium text-indigo-900 mb-1" htmlFor="novena-select">Selecione uma novena</label>
+              <select className="border p-3 w-full rounded-lg text-base" value={selectedNovena} onChange={(e) => setSelectedNovena(e.target.value)}>
+                <option value="carlo-acutis">Novena a Carlo Acutis</option>
+                <option value="santa-teresinha">Novena a Santa Teresinha</option>
+              </select>
+            </div>
 
-            <input
-              type="date"
-              className="border p-3 rounded-lg text-base w-full min-w-0"
-              value={selectedDate}
-              onChange={(e) => setSelectedDate(e.target.value)}
-              placeholder="Data de início"
-              inputMode="numeric"
-            />
+            <div>
+                <label className="text-sm font-medium block text-indigo-900 mb-1" htmlFor="data-inicio">Data de início</label>
+                <input
+                id="data-inicio"
+                type="date"
+                className="border p-3 rounded-lg text-base w-full min-w-0"
+                value={selectedDate}
+                onChange={(e) => setSelectedDate(e.target.value)}
+                inputMode="numeric"
+                />
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-3">
               <button onClick={startNovena} className="flex-1 px-6 py-3 bg-slate-900 text-white rounded-lg hover:bg-slate-800 font-medium">
