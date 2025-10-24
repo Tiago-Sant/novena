@@ -121,11 +121,13 @@ export default function HomePage() {
               <option value="santa-teresinha">Novena a Santa Teresinha</option>
             </select>
 
-            <input 
-              type="date" 
-              className="border p-3 rounded-lg text-base" 
-              value={selectedDate} 
-              onChange={(e) => setSelectedDate(e.target.value)} 
+            <input
+              type="date"
+              className="border p-3 rounded-lg text-base w-full min-w-0"
+              value={selectedDate}
+              onChange={(e) => setSelectedDate(e.target.value)}
+              placeholder="Data de início"
+              inputMode="numeric"
             />
 
             <div className="flex flex-col sm:flex-row gap-3">
