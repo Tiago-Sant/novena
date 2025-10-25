@@ -68,18 +68,7 @@ export default function NovenaNavigation({ novenaId, currentDay, selectedDay, on
 
   return (
     <div className="w-full">
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 gap-2">
-        <h3 className="text-lg font-semibold">Navegação da Novena</h3>
-        {selectedDay && selectedDay !== currentDayOfNovena && (
-          <div className="flex items-center gap-2 text-sm text-purple-600 bg-purple-50 px-3 py-1 rounded-full self-start sm:self-auto">
-            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-            </svg>
-            <span>Visualizando Dia {selectedDay}</span>
-          </div>
-        )}
-      </div>
-      <div className="grid grid-cols-5 sm:grid-cols-7 md:grid-cols-9 gap-2 sm:gap-3">
+      <div className="flex overflow-x-auto py-3 px-1 sm:grid-cols-7 md:grid-cols-9 md:grid gap-2 sm:gap-3">
         {novenaData.days.map((dayData) => {
           const status = getDayStatus(dayData.day)
           const isSelected = dayData.day === selectedDay
@@ -123,41 +112,9 @@ export default function NovenaNavigation({ novenaId, currentDay, selectedDay, on
                   {isCompleted ? 'Desmarcar' : 'Marcar'}
                 </button>
               )}
-              {isSelected && (
-                <span className="text-xs text-blue-600 font-medium mt-1">
-                  Visualizando
-                </span>
-              )}
             </div>
           )
         })}
-      </div>
-      
-      <div className="mt-4 flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm text-gray-600">
-        <div className="flex items-center gap-2">
-          <div className="w-4 h-4 rounded-full border-2 border-blue-500 bg-white"></div>
-          <span>Selecionado</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="w-4 h-4 rounded-full bg-purple-600"></div>
-          <span>Dia atual</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="w-4 h-4 rounded-full bg-green-500"></div>
-          <span>Completado</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="w-4 h-4 rounded-full bg-red-100 border border-red-300"></div>
-          <span>Atrasado</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="w-4 h-4 rounded-full bg-gray-100 border border-gray-300"></div>
-          <span>Disponível</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="w-4 h-4 rounded-full bg-gray-50 border border-gray-200"></div>
-          <span>Futuro</span>
-        </div>
       </div>
     </div>
   )
