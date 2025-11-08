@@ -2,7 +2,7 @@ export const carloAcutisNovena = {
   slug: 'carlo-acutis',
   name: 'Novena a Carlo Acutis',
   prayer: '5 Pai-Nossos, 5 Ave-Marias e 5 Glórias.',
-  initialPrayer: `Ó Deus, que na vossa infinita misericórdia e amor para com os homens, elevastes à glória dos altares o vosso servo São Carlo Acutis, jovem modelo de santidade e apóstolo da Eucaristia, concedei-nos, pelos méritos dele, a graça que ardentemente vos pedimos nesta novena, se for para a glória do vosso nome e para o bem de nossas almas. Amém.`,
+  initialPrayer: `Santíssima Trindade, Pai, Filho e Espírito Santo, eu vos agradeço por todos os favores e todas as graças com que enriquecestes a alma de São Carlo Acutis durante os 15 anos que passou nesta Terra e, pelos méritos deste tão querido Anjo da Juventude, vos suplico que me concedais a graça que ardentemente vos peço: *(faz-se o pedido da graça que se deseja).*`,
   finallyPrayer: `Deus Pai de Misericórdia, que elevastes à glória dos altares este vosso servo Carlo Acutis, a fim de que, por ele, vós fôsseis mais glorificado, concedei-nos, pelos méritos dele — que em tudo viveu a vossa vontade —, a graça que ardentemente desejo. Amém.`,
   days: [
     {
