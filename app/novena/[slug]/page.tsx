@@ -123,6 +123,19 @@ export default function NovenaPage({ params }: PageProps) {
                 </p>
               </div>
 
+              {
+                current.prayerOfDay && (
+                  <div>
+                    <h3 className="text-base sm:text-lg mb-3">
+                      Oração do dia
+                    </h3>
+                    <p className="text-gray-800 whitespace-pre-line leading-relaxed text-sm sm:text-base">
+                      {current.prayerOfDay}
+                    </p>
+                  </div>
+                )
+              }
+
               {data.prayer && (
                 <div>
                   <p className="text-gray-700 whitespace-pre-line leading-relaxed text-sm sm:text-base">

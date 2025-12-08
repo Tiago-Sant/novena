@@ -102,6 +102,11 @@ export default function HomePage() {
                 Esta novena consiste na mesma oração rezada por 9 dias consecutivos, 
                 seguida de 24 Glórias ao Pai.
               </p>
+              <h2 className='text-rose-800 m-2'>Dia que se celebra Santa Teresinha - 1º de outubro</h2>
+              <p className="text-rose-700 text-sm">
+                Comece sua novena em qualquer data, mas para uma experiência especial,
+                considere iniciá-la no dia 22 de setembro, terminando no dia 1º de outubro.
+              </p>
             </div>
           )}
           
@@ -113,6 +118,25 @@ export default function HomePage() {
                 com orações específicas para cada dia, focando em temas como Eucaristia, 
                 santidade e amor a Jesus.
               </p>
+                <h2 className='text-blue-800 m-2'>Dia que se celebra São Carlo Acutis - 12 de outubro</h2>
+                <p className="text-blue-700 text-sm">
+                    Para uma experiência especial, considere iniciar sua novena no dia 3 de outubro,
+                    terminando no dia 12 de outubro.
+                </p>
+            </div>
+          )}
+            {selectedNovena === 'novena-de-natal' && (
+            <div className="mb-4 p-4 bg-green-50 border border-green-200 rounded-lg">
+              <h3 className="font-semibold text-green-800 mb-2">🎄 Novena de Natal</h3>
+              <p className="text-green-700 text-sm">
+                Prepare-se para o Natal com esta novena especial que celebra o nascimento de Jesus. 
+                Cada dia traz uma reflexão e oração para se preparar para celebrar o Natal.
+              </p>
+                <h2 className='text-green-800 m-2'>Dia que se celebra o Natal - 25 de dezembro</h2>
+                <p className="text-green-700 text-sm">
+                    Para uma experiência especial, considere iniciar sua novena no dia 16 de dezembro,
+                    terminando no dia 25 de dezembro.
+                </p>
             </div>
           )}
           <div className="flex flex-col gap-4 w-full">
@@ -121,6 +145,7 @@ export default function HomePage() {
               <select className="border p-3 w-full rounded-lg text-base" value={selectedNovena} onChange={(e) => setSelectedNovena(e.target.value)}>
                 <option value="carlo-acutis">Novena a Carlo Acutis</option>
                 <option value="santa-teresinha">Novena a Santa Teresinha</option>
+                <option value="novena-de-natal">Novena de Natal</option>
               </select>
             </div>
 

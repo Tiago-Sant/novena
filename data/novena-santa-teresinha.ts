@@ -15,48 +15,57 @@ export const santaTeresinhaNovena = {
   days: [
     {
       day: 1,
-      title: 'Primeiro dia — A Rosa Prometida',
+      title: 'A Rosa Prometida',
       meditation: null,
+      prayerOfDay: null
     },
     {
       day: 2,
-      title: 'Segundo dia — A Rosa Prometida',
-      meditation: null, 
+      title: 'A Rosa Prometida',
+      meditation: null,
+      prayerOfDay: null
     },
     {
       day: 3,
-      title: 'Terceiro dia — A Rosa Prometida',
-      meditation: null, 
+      title: 'A Rosa Prometida',
+      meditation: null,
+      prayerOfDay: null
     },
     {
       day: 4,
-      title: 'Quarto dia — A Rosa Prometida',
+      title: 'A Rosa Prometida',
       meditation: null,
+      prayerOfDay: null
     },
     {
       day: 5,
-      title: 'Quinto dia — A Rosa Prometida',
+      title: 'A Rosa Prometida',
       meditation: null,
+      prayerOfDay: null
     },
     {
       day: 6,
-      title: 'Sexto dia — A Rosa Prometida',
+      title: 'A Rosa Prometida',
       meditation: null,
+      prayerOfDay: null
     },
     {
       day: 7,
-      title: 'Sétimo dia — A Rosa Prometida',
+      title: 'A Rosa Prometida',
       meditation: null,
+      prayerOfDay: null
     },
     {
       day: 8,
-      title: 'Oitavo dia — A Rosa Prometida',
+      title: 'A Rosa Prometida',
       meditation: null,
+      prayerOfDay: null
     },
     {
       day: 9,
-      title: 'Nono dia — A Rosa Prometida',
+      title: 'A Rosa Prometida',
       meditation: null,
+      prayerOfDay: null
     }
   ]
 }
