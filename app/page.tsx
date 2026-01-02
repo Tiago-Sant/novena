@@ -125,6 +125,31 @@ export default function HomePage() {
                 </p>
             </div>
           )}
+          {selectedNovena === 'nossa-senhora-do-carmo' && (
+            <div className="mb-4 p-4 bg-amber-50 border border-amber-200 rounded-lg">
+                <h3 className="font-semibold text-amber-800 mb-2">🔥 Novena a Nossa Senhora do Carmo</h3>
+
+                <p className="text-amber-700 text-sm">
+                Esta novena conduz o fiel a aprofundar a vida interior, a confiança filial
+                e a fé purificada, segundo a espiritualidade do Carmelo.
+                Guiada por Nossa Senhora do Carmo e iluminada por Santa Teresa d’Ávila,
+                Santa Teresinha do Menino Jesus e São João da Cruz,
+                ela prepara a alma para viver e adorar melhor Jesus na Eucaristia
+                e para comungar com maior reverência e amor.
+                </p>
+
+                <h2 className="text-amber-800 m-2">
+                Festa de Nossa Senhora do Carmo – 16 de julho
+                </h2>
+
+                <p className="text-amber-700 text-sm">
+                Para uma vivência espiritual mais intensa, recomenda-se iniciar a novena
+                no dia 7 de julho, concluindo-a na solenidade de Nossa Senhora do Carmo,
+                renovando o amor à Eucaristia e o compromisso com a vida de oração cotidiana.
+                </p>
+            </div>
+         )}
+
             {selectedNovena === 'novena-de-natal' && (
             <div className="mb-4 p-4 bg-green-50 border border-green-200 rounded-lg">
               <h3 className="font-semibold text-green-800 mb-2">🎄 Novena de Natal</h3>
@@ -146,6 +171,7 @@ export default function HomePage() {
                 <option value="carlo-acutis">Novena a Carlo Acutis</option>
                 <option value="santa-teresinha">Novena a Santa Teresinha</option>
                 <option value="novena-de-natal">Novena de Natal</option>
+                <option value="nossa-senhora-do-carmo">Novena a Nossa Senhora do Carmo</option>
               </select>
             </div>
 

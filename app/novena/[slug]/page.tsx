@@ -95,7 +95,7 @@ export default function NovenaPage({ params }: PageProps) {
         <>
           <div className="prayer-card mb-4 p-4 sm:p-6 bg-white rounded-lg border shadow-sm">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-2">
-              <h2 className="text-lg sm:text-xl font-semibold">Dia {current.day} — {current.title}</h2>
+              <h2 className="text-lg sm:text-xl font-semibold">Dia {current.day} - {current.title}</h2>
               {!isCurrentDay && (
                 <span className="text-xs sm:text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded self-start sm:self-auto">
                   Visualização
@@ -108,7 +108,7 @@ export default function NovenaPage({ params }: PageProps) {
                 <h3 className="font-medium text-base sm:text-lg mb-3">
                   Oração inicial
                 </h3>
-                <p className="text-gray-800 leading-relaxed text-sm sm:text-base">{data.initialPrayer}</p>
+                <p className="text-gray-800 whitespace-pre-line leading-relaxed text-sm sm:text-base">{data.initialPrayer}</p>
               </div>
               )}
 
@@ -146,7 +146,7 @@ export default function NovenaPage({ params }: PageProps) {
               {'finallyPrayer' in data && data.finallyPrayer && (
                 <div>
                   <h3 className="font-medium text-base sm:text-lg mb-3">Oração final</h3>
-                  <p className="text-gray-800 leading-relaxed text-sm sm:text-base">{data.finallyPrayer}</p>
+                  <p className="text-gray-800 whitespace-pre-line leading-relaxed text-sm sm:text-base">{data.finallyPrayer}</p>
                 </div>
               )}
             </div>
