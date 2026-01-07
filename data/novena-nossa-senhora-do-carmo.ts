@@ -137,6 +137,8 @@ Amém.`
 
 Na adoração eucarística, fazemos o mesmo: amar estando.
 
+Adorar é estar. Apenas estar.
+
 Sei ficar diante de Jesus sem dizer nada?
 
 Em silêncio, medite sobre isso com Nossa Senhora do Carmo.`,
@@ -152,7 +154,7 @@ Amém.`
 
 Teresinha ensina a oferecer tudo nos pequenos gestos. João da Cruz ensina a nada reter.
 
-Ofereço minha vida com Cristo no altar?
+Ofereço minha vida com Cristo na Eucaristia?
 
 Em silêncio, medite sobre isso com Nossa Senhora do Carmo.`,
       prayerOfDay: `Nossa Senhora do Carmo,
@@ -168,9 +170,9 @@ na oração com Santa Teresa,
 na confiança com Santa Teresinha,
 na fé purificada com São João da Cruz.
 
-A Eucaristia sustenta esse caminho.
+A Eucaristia é alimento para essa perseverança.
 
-Quero viver unido a Jesus e a Maria até o fim?
+Tenho me esforçado para viver unido a Jesus e a Maria até o fim?
 
 Em silêncio, medite sobre isso com Nossa Senhora do Carmo.`,
       prayerOfDay: `Nossa Senhora do Carmo,
