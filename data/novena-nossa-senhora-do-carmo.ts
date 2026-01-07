@@ -100,6 +100,12 @@ Amém.`
 
 Confessar-se com frequência não é medo, é amor. É desejar estar sempre pronto para a união com Jesus.
 
+Este dia é especialmente dedicado:
+
+- a fazer um exame de consciência,
+- a buscar o Sacramento da Reconciliação,
+- a renovar o compromisso com a vida em graça.
+
 Tenho cuidado da minha alma como Maria cuidou de Jesus?
 
 Em silêncio, medite sobre isso com Nossa Senhora do Carmo.`,
