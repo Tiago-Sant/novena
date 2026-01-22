@@ -7,6 +7,7 @@ import { useNovenaStore } from '../../../store/useNovenaStore'
 import { novenas } from '../../../data'
 import NovenaNavigation from '../../../components/NovenaNavigation'
 import NovenaActions from '../../../components/NovenaActions'
+import Image from 'next/image'
 
 interface PageProps {
   params: {
@@ -63,6 +64,18 @@ export default function NovenaPage({ params }: PageProps) {
 
   return (
     <section className="mt-6">
+      {data.image && (
+        <div className="w-full flex justify-center mb-4">
+          <Image
+            src={data.image}
+            alt={data.name}
+            height={400}
+            width={636}
+            className="rounded-md object-cover max-h-[400px] w-full shadow"
+            style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.07)' }}
+          />
+        </div>
+      )}
       <h1 className="text-xl sm:text-2xl font-bold mb-2">{data.name}</h1>
       <div className="text-gray-600 mb-4 text-sm sm:text-base">
         <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">

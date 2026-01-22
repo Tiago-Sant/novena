@@ -1,6 +1,15 @@
 export const santaTeresinhaNovena = {
   slug: 'santa-teresinha',
   name: 'Novena a Santa Teresinha',
+  color: 'bg-rose-50',
+  border: 'border border-rose-200',
+  rounded: 'rounded-lg',
+  icon: '🌹',
+  description: 'Santa Teresinha promete enviar uma rosa como sinal de que a graça será concedida. Esta novena consiste na mesma oração rezada por 9 dias consecutivos, seguida de 24 Glórias ao Pai.',
+  celebration: 'Dia que se celebra Santa Teresinha - 1º de outubro',
+  experience: 'Comece sua novena em qualquer data, mas para uma experiência especial, considere iniciá-la no dia 22 de setembro, terminando no dia 1º de outubro.',
+  textColor: 'text-rose-800',
+  image: '/images/teresinha.png',
   finallyPrayer: null,
   initialPrayer: null,
   prayer: `Em nome do Pai, do Filho e do Espírito Santo. Amém.

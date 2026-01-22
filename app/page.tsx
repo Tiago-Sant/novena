@@ -5,6 +5,7 @@ import { parseISO, differenceInDays, format } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
 import { useNovenaStore } from '../store/useNovenaStore'
 import { novenas } from '../data'
+import { NovenaInfoCard } from '../components/NovenaInfoCard'
 
 export default function HomePage() {
   const router = useRouter()
@@ -94,76 +95,23 @@ export default function HomePage() {
         <div className="mb-8 p-4 sm:p-6 bg-gray-50 rounded-lg border">
           <h2 className="text-lg sm:text-xl font-semibold mb-4">Iniciar Nova Novena</h2>
           
-          {selectedNovena === 'santa-teresinha' && (
-            <div className="mb-4 p-4 bg-rose-50 border border-rose-200 rounded-lg">
-              <h3 className="font-semibold text-rose-800 mb-2">🌹 Novena da Rosa Milagrosa</h3>
-              <p className="text-rose-700 text-sm">
-                Santa Teresinha promete enviar uma rosa como sinal de que a graça será concedida. 
-                Esta novena consiste na mesma oração rezada por 9 dias consecutivos, 
-                seguida de 24 Glórias ao Pai.
-              </p>
-              <h2 className='text-rose-800 m-2'>Dia que se celebra Santa Teresinha - 1º de outubro</h2>
-              <p className="text-rose-700 text-sm">
-                Comece sua novena em qualquer data, mas para uma experiência especial,
-                considere iniciá-la no dia 22 de setembro, terminando no dia 1º de outubro.
-              </p>
-            </div>
-          )}
-          
-          {selectedNovena === 'carlo-acutis' && (
-            <div className="mb-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-              <h3 className="font-semibold text-blue-800 mb-2">💻 Novena do Santo da Internet</h3>
-              <p className="text-blue-700 text-sm">
-                São Carlo Acutis, padroeiro da internet e jovem santo, intercede por nós 
-                com orações específicas para cada dia, focando em temas como Eucaristia, 
-                santidade e amor a Jesus.
-              </p>
-                <h2 className='text-blue-800 m-2'>Dia que se celebra São Carlo Acutis - 12 de outubro</h2>
-                <p className="text-blue-700 text-sm">
-                    Para uma experiência especial, considere iniciar sua novena no dia 3 de outubro,
-                    terminando no dia 12 de outubro.
-                </p>
-            </div>
-          )}
-          {selectedNovena === 'nossa-senhora-do-carmo' && (
-            <div className="mb-4 p-4 bg-amber-50 border border-amber-200 rounded-lg">
-                <h3 className="font-semibold text-amber-800 mb-2">🔥 Novena a Nossa Senhora do Carmo</h3>
-
-                <p className="text-amber-700 text-sm">
-                Esta novena conduz o fiel a aprofundar a vida interior, a confiança filial
-                e a fé purificada, segundo a espiritualidade do Carmelo.
-                Guiada por Nossa Senhora do Carmo e iluminada por Santa Teresa d’Ávila,
-                Santa Teresinha do Menino Jesus e São João da Cruz,
-                ela prepara a alma para viver e adorar melhor Jesus na Eucaristia
-                e para comungar com maior reverência e amor.
-                </p>
-
-                <h2 className="text-amber-800 m-2">
-                Festa de Nossa Senhora do Carmo – 16 de julho
-                </h2>
-
-                <p className="text-amber-700 text-sm">
-                Para uma vivência espiritual mais intensa, recomenda-se iniciar a novena
-                no dia 7 de julho, concluindo-a na solenidade de Nossa Senhora do Carmo,
-                renovando o amor à Eucaristia e o compromisso com a vida de oração cotidiana.
-                </p>
-            </div>
-         )}
-
-            {selectedNovena === 'novena-de-natal' && (
-            <div className="mb-4 p-4 bg-green-50 border border-green-200 rounded-lg">
-              <h3 className="font-semibold text-green-800 mb-2">🎄 Novena de Natal</h3>
-              <p className="text-green-700 text-sm">
-                Prepare-se para o Natal com esta novena especial que celebra o nascimento de Jesus. 
-                Cada dia traz uma reflexão e oração para se preparar para celebrar o Natal.
-              </p>
-                <h2 className='text-green-800 m-2'>Dia que se celebra o Natal - 25 de dezembro</h2>
-                <p className="text-green-700 text-sm">
-                    Para uma experiência especial, considere iniciar sua novena no dia 16 de dezembro,
-                    terminando no dia 25 de dezembro.
-                </p>
-            </div>
-          )}
+          {Object.entries(novenas).map(([key, novena]) => (
+            selectedNovena === key && (
+              <NovenaInfoCard
+                color={novena.color}
+                border={novena.border}
+                rounded={novena.rounded}
+                icon={novena.icon}
+                title={novena.name}
+                description={novena.description || novena.prayer}
+                celebration={novena.celebration}
+                experience={novena.experience}
+                textColor={novena.textColor}
+                image={novena.image}
+                key={novena.slug}
+              />
+            )
+          ))}
           <div className="flex flex-col gap-4 w-full">
             <div>
               <label className="text-sm block font-medium text-indigo-900 mb-1" htmlFor="novena-select">Selecione uma novena</label>

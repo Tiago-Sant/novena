@@ -1,6 +1,15 @@
 export const carmoNovena = {
-  slug: 'novena-a-nossa-senhora-do-carmo',
-  name: 'Novena a Nossa Senhora do Carmo',
+      slug: 'nossa-senhora-do-carmo',
+      name: 'Novena a Nossa Senhora do Carmo',
+      color: 'bg-amber-50',
+      border: 'border border-amber-200',
+      rounded: 'rounded-lg',
+      icon: '🔥',
+      description: 'Esta novena conduz o fiel a aprofundar a vida interior, a confiança filial e a fé purificada, segundo a espiritualidade do Carmelo. Guiada por Nossa Senhora do Carmo e iluminada por Santa Teresa d’Ávila, Santa Teresinha do Menino Jesus e São João da Cruz, ela prepara a alma para viver e adorar melhor Jesus na Eucaristia e para comungar com maior reverência e amor.',
+      celebration: 'Festa de Nossa Senhora do Carmo – 16 de julho',
+      experience: 'Para uma vivência espiritual mais intensa, recomenda-se iniciar a novena no dia 7 de julho, concluindo-a na solenidade de Nossa Senhora do Carmo, renovando o amor à Eucaristia e o compromisso com a vida de oração cotidiana.',
+      textColor: 'text-amber-800',
+      image: '/images/carmo.png',
   prayer: `Rezar 1 Pai Nosso, 1 Ave Maria e 1 Glória ao Pai.
 
 Nossa Senhora do Carmo, rogai por nós.`,

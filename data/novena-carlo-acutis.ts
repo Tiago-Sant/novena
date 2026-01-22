@@ -1,13 +1,22 @@
 export const carloAcutisNovena = {
   slug: 'carlo-acutis',
   name: 'Novena a Carlo Acutis',
+  color: 'bg-blue-50',
+  border: 'border border-blue-200',
+  rounded: 'rounded-lg',
+  icon: '💻',
+  description: 'São Carlo Acutis, padroeiro da internet e jovem santo, intercede por nós com orações específicas para cada dia, focando em temas como Eucaristia, santidade e amor a Jesus.',
+  celebration: 'Dia que se celebra São Carlo Acutis - 12 de outubro',
+  experience: 'Para uma experiência especial, considere iniciar sua novena no dia 3 de outubro, terminando no dia 12 de outubro.',
+  textColor: 'text-blue-800',
+  image: '/images/carlo.png',
   prayer: '5 Pai-Nossos, 5 Ave-Marias e 5 Glórias.',
   initialPrayer: `Santíssima Trindade, Pai, Filho e Espírito Santo, eu vos agradeço por todos os favores e todas as graças com que enriquecestes a alma de São Carlo Acutis durante os 15 anos que passou nesta Terra e, pelos méritos deste tão querido Anjo da Juventude, vos suplico que me concedais a graça que ardentemente vos peço: *(faz-se o pedido da graça que se deseja).*`,
   finallyPrayer: `Deus Pai de Misericórdia, que elevastes à glória dos altares este vosso servo Carlo Acutis, a fim de que, por ele, vós fôsseis mais glorificado, concedei-nos, pelos méritos dele — que em tudo viveu a vossa vontade —, a graça que ardentemente desejo. Amém.`,
   days: [
     {
       day: 1,
-      title: 'Amor à Eucaristia',
+      title: 'Buscar as coisas do Céu',
       meditation: '“Não eu, mas Deus”\nSão Carlo Acutis, que fizeste de tua vida uma contínua renúncia e aniquilamento, dá-me a graça de buscar as coisas do Céu e desprezar as que passam. Amém.',
       prayerOfDay: null
     },
