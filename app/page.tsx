@@ -158,6 +158,9 @@ export default function HomePage() {
 								<option value="nossa-senhora-do-carmo">
 									Novena a Nossa Senhora do Carmo
 								</option>
+                                <option value="nossa-senhora-de-fatima">
+									Novena a Nossa Senhora de Fátima
+								</option>
 							</select>
 						</div>
 
@@ -195,6 +198,13 @@ export default function HomePage() {
 					</div>
 				</div>
 			)}
+
+            {/* fazer tailwind carregar cores dinâmicas */}
+            <div className="hidden">
+                <div className="bg-red-50 border-red-200 text-red-800"></div>
+                <div className="bg-amber-50 border-amber-200 text-amber-800"></div>
+                <div className="bg-rose-50 border-rose-200 text-rose-800"></div>
+            </div>
 
 			{/* Lista de novenas */}
 			{tab === 'ativas' &&
