@@ -1,6 +1,8 @@
 'use client';
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import { scheduleNotifications } from '../lib/notifications';
+import type { NotificationPermissionStatus, NotificationPreferences } from '../lib/notifications';
 
 interface NovenaInstance {
 	id: string;
@@ -10,14 +12,27 @@ interface NovenaInstance {
 	createdAt: string;
 }
 
+const defaultNotifications: NotificationPreferences = {
+	enabled: false,
+	defaultHour: 8,
+	defaultMinute: 0,
+	startReminderEnabled: true,
+	dailyReminderEnabled: true,
+	permissionStatus: 'default',
+};
+
 interface NovenaState {
 	novenas: NovenaInstance[];
 	selectedDay: { [novenaId: string]: number | null };
+	notifications: NotificationPreferences;
 	createNovena: (type: string, startDate: string) => string;
 	markDay: (novenaId: string, day: number) => void;
 	setSelectedDay: (novenaId: string, day: number | null) => void;
 	deleteNovena: (novenaId: string) => void;
 	getNovena: (novenaId: string) => NovenaInstance | undefined;
+	setNotificationPreferences: (preferences: Partial<NotificationPreferences>) => void;
+	setNotificationPermissionStatus: (status: NotificationPermissionStatus) => void;
+	initializeNotifications: () => void;
 }
 
 export const useNovenaStore = create<NovenaState>()(
@@ -25,6 +40,7 @@ export const useNovenaStore = create<NovenaState>()(
 		(set, get) => ({
 			novenas: [],
 			selectedDay: {},
+			notifications: defaultNotifications,
 			createNovena: (type, startDate) => {
 				const id = `${type}-${Date.now()}`;
 				const newNovena: NovenaInstance = {
@@ -34,35 +50,62 @@ export const useNovenaStore = create<NovenaState>()(
 					completedDays: [],
 					createdAt: new Date().toISOString(),
 				};
-				set({ novenas: [...get().novenas, newNovena] });
+				set((state) => ({ ...state, novenas: [...state.novenas, newNovena] }));
+				get().initializeNotifications();
 				return id;
 			},
 			markDay: (novenaId, day) => {
-				const { novenas } = get();
-				const updatedNovenas = novenas.map((novena) => {
-					if (novena.id === novenaId) {
-						const completedDays = novena.completedDays.includes(day)
-							? novena.completedDays.filter((d) => d !== day)
-							: [...novena.completedDays, day];
-						return { ...novena, completedDays };
-					}
-					return novena;
-				});
-				set({ novenas: updatedNovenas });
+				set((state) => ({
+					...state,
+					novenas: state.novenas.map((novena) => {
+						if (novena.id === novenaId) {
+							const completedDays = novena.completedDays.includes(day)
+								? novena.completedDays.filter((d) => d !== day)
+								: [...novena.completedDays, day];
+							return { ...novena, completedDays };
+						}
+						return novena;
+					}),
+				}));
+				get().initializeNotifications();
 			},
 			setSelectedDay: (novenaId, day) => {
-				const { selectedDay } = get();
-				set({ selectedDay: { ...selectedDay, [novenaId]: day } });
+				set((state) => ({
+					...state,
+					selectedDay: { ...state.selectedDay, [novenaId]: day },
+				}));
 			},
 			deleteNovena: (novenaId) => {
-				const { novenas, selectedDay } = get();
-				const updatedNovenas = novenas.filter((n) => n.id !== novenaId);
-				const updatedSelectedDay = { ...selectedDay };
-				delete updatedSelectedDay[novenaId];
-				set({ novenas: updatedNovenas, selectedDay: updatedSelectedDay });
+				set((state) => {
+					const updatedSelectedDay = { ...state.selectedDay };
+					delete updatedSelectedDay[novenaId];
+					return {
+						...state,
+						novenas: state.novenas.filter((n) => n.id !== novenaId),
+						selectedDay: updatedSelectedDay,
+					};
+				});
+				get().initializeNotifications();
 			},
 			getNovena: (novenaId) => {
 				return get().novenas.find((n) => n.id === novenaId);
+			},
+			setNotificationPreferences: (preferences) => {
+				set((state) => ({
+					...state,
+					notifications: { ...state.notifications, ...preferences },
+				}));
+				get().initializeNotifications();
+			},
+			setNotificationPermissionStatus: (status) => {
+				set((state) => ({
+					...state,
+					notifications: { ...state.notifications, permissionStatus: status },
+				}));
+			},
+			initializeNotifications: () => {
+				const { novenas, notifications } = get();
+				scheduleNotifications(novenas, notifications);
 			},
 		}),
 		{ name: 'novenas-progress' },

@@ -6,6 +6,7 @@ import { ptBR } from 'date-fns/locale';
 import { useNovenaStore } from '../store/useNovenaStore';
 import { novenas } from '../data';
 import { NovenaInfoCard } from '../components/NovenaInfoCard';
+import NotificationSettings from '../components/NotificationSettings';
 
 export default function HomePage() {
 	const router = useRouter();
@@ -94,6 +95,10 @@ export default function HomePage() {
 					</svg>
 					Nova Novena
 				</button>
+			</div>
+
+			<div className="mb-6">
+				<NotificationSettings />
 			</div>
 
 			{/* Tabs de navegação */}
