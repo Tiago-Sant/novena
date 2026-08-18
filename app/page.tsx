@@ -158,12 +158,15 @@ export default function HomePage() {
 								<option value="nossa-senhora-do-carmo">
 									Novena a Nossa Senhora do Carmo
 								</option>
-                                <option value="nossa-senhora-de-fatima">
+								<option value="nossa-senhora-de-fatima">
 									Novena a Nossa Senhora de Fátima
 								</option>
-                                <option value="espirito-santo">
-                                    Novena ao Espírito Santo
-                                </option>
+								<option value="espirito-santo">
+									Novena ao Espírito Santo
+								</option>
+								<option value="beato-padre-eustaquio">
+									Novena ao Beato Padre Eustáquio
+								</option>
 							</select>
 						</div>
 
