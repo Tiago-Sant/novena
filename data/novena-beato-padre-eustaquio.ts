@@ -29,61 +29,49 @@ Beato Padre Eustáquio, rogai por nós!`,
 			day: 1,
 			title: 'Padre Eustáquio e a virtude da Fé',
 			meditation: `Padre Eustáquio edificava a todos pela sua profunda piedade. Sua fé era firme e inabalável, também nas tribulações e dificuldades da vida. Dizia: “Sempre me vem aos lábios: como Deus é grande! Mas, deveras, todos os dias estou reparando mais e mais, como nós somos míopes para a grandeza de Deus.” E aconselhava: “Que nada vos perturbe, nada vos aflija, que nada vos assuste! Tudo passa, dor e alegria! Só Deus fica. Eternamente!”`,
-			prayerOfDay: `Alcançai-me, Padre Eustáquio, a graça de uma fé viva e generosa nos mistérios de Deus, nas verdades reveladas e na bondade e providência divina. Que minha fé seja como foi a vossa, inabalável, principalmente, nas dificuldades e sofrimentos da vida. Amém. Pai-nosso; Ave-Maria; Glória; Beato Padre Eustáquio, rogai por nós!`,
+			prayerOfDay: `Alcançai-me, Padre Eustáquio, a graça de uma fé viva e generosa nos mistérios de Deus, nas verdades reveladas e na bondade e providência divina. Que minha fé seja como foi a vossa, inabalável, principalmente, nas dificuldades e sofrimentos da vida. Amém.`,
 		},
 		{
 			day: 2,
 			title: 'Padre Eustáquio e a virtude da esperança',
 			meditation: `Padre Eustáquio via em tudo a mão da Divina Providência e deixava-se guiar por ela entregando-se ao Pai Celeste com confiança sem limites, na certeza de conseguir os meios e graças indispensáveis para suas necessidades na terra e para a sua felicidade no céu. Em seu ministério sacerdotal dizia sempre: “Deus é muito bom Pai. Nosso Senhor sabe tudo, tudo prevê, tudo dirige e governa. Tenham confiança em Deus, Ele providenciará”.`,
-			prayerOfDay: `Alcançai-me, bondoso Padre Eustáquio, a graça de abandonar-me em tudo à vontade divina, confiando na Sua infinita bondade. Fazei-me compreender melhor a necessidade da oração confiante. Amém. Pai-nosso; Ave-Maria; Glória; Beato Padre Eustáquio, rogai por nós!`,
+			prayerOfDay: `Alcançai-me, bondoso Padre Eustáquio, a graça de abandonar-me em tudo à vontade divina, confiando na Sua infinita bondade. Fazei-me compreender melhor a necessidade da oração confiante. Amém.`,
 		},
 		{
 			day: 3,
 			title: 'Padre Eustáquio e o Amor de Deus',
 			meditation: `De pensamento sempre elevado, Padre Eustáquio tinha sua alma unida constantemente a Deus. Em sua vida de oração, em suas palavras cheias de unção, em seu apostolado de caridade, vivia sempre para Deus. Praticava o que deixou por escrito: “Oh, meu Jesus, eu Vos amo. Eu Vos amo com a vossa cruz, com o vosso sofrimento, com o vosso Amor imenso.”`,
-			prayerOfDay: `Meu grande protetor, Padre Eustáquio, ajudai-me a pôr em prática o mandamento do amor, para que a minha alma fique sempre unida a Deus pela graça santificante e que o amor que vem d’Ele inspire todas as ações da minha vida cotidiana. Amém. Pai-nosso; Ave-Maria; Glória; Beato Padre Eustáquio, rogai por nós!`,
+			prayerOfDay: `Meu grande protetor, Padre Eustáquio, ajudai-me a pôr em prática o mandamento do amor, para que a minha alma fique sempre unida a Deus pela graça santificante e que o amor que vem d’Ele inspire todas as ações da minha vida cotidiana. Amém.`,
 		},
 		{
 			day: 4,
 			title: 'Padre Eustáquio e a caridade',
 			meditation: `A vida inteira de Padre Eustáquio foi impregnada do amor ao próximo, principalmente aos pobres, aos enfermos, aos pecadores, aos menos favorecidos. Dava-lhes tudo que podia dar: conselhos, consolo, dinheiro, alimentos, roupas e remédios. Ainda procurava trabalho para os desempregados. Era pai, amigo, enfermeiro, conselheiro e pastor. Numa palavra: era um benfeitor de todos, verdadeiro anjo de caridade.`,
-			prayerOfDay: `Alcançai-me, bondoso Padre Eustáquio, a grande graça de contemplar em meu próximo a imagem de Jesus, para que, inspirado pelo seu edificante exemplo, eu pratique as obras de caridade cristã em benefício daqueles que a Divina Providência puser em meu caminho. Amém. Pai-nosso; Ave-Maria; Glória; Beato Padre Eustáquio, rogai por nós!`,
+			prayerOfDay: `Alcançai-me, bondoso Padre Eustáquio, a grande graça de contemplar em meu próximo a imagem de Jesus, para que, inspirado pelo seu edificante exemplo, eu pratique as obras de caridade cristã em benefício daqueles que a Divina Providência puser em meu caminho. Amém.`,
 		},
 		{
 			day: 5,
 			title: 'Padre Eustáquio e a virtude da prudência',
 			meditation: `A única e verdadeira preocupação na vida de Padre Eustáquio era a sua união constante com Deus. Evitava tudo o que podia oferecer ocasião ao pecado: ociosidade, comodismo, conversas inúteis ou leituras vãs. Em dificuldades pedia sempre luz ao Divino Espírito Santo. Como zeloso pastor e confessor muito procurado, aconselhava com decisões bem prudentes e, por isso, acertadíssimas.`,
-			prayerOfDay: `Por vossa poderosa intercessão, Padre Eustáquio, alcançai-me a virtude da prudência cristã, pela qual eu procure fazer sempre o que é reto aos olhos de Deus e o que é proveitoso àqueles que convivem comigo. Amém.
-
-Pai-nosso; Ave-Maria; Glória;
-Beato Padre Eustáquio, rogai por nós!`,
+			prayerOfDay: `Por vossa poderosa intercessão, Padre Eustáquio, alcançai-me a virtude da prudência cristã, pela qual eu procure fazer sempre o que é reto aos olhos de Deus e o que é proveitoso àqueles que convivem comigo. Amém.`,
 		},
 		{
 			day: 6,
 			title: 'Padre Eustáquio e a virtude da justiça',
 			meditation: `Todos consideravam Padre Eustáquio um homem justo. Defendia sempre os direitos dos menos favorecidos. Não admitia o pré-julgamento de pessoas no cumprimento de seus deveres e na prática da caridade cristã. Quando a justiça lhe impunha agir com certo rigor, fazia-o sempre com a devida moderação, visando mais o mal feito do que a pessoa faltosa.`,
-			prayerOfDay: `Bondoso Padre Eustáquio, alcançai-me, por vosso exemplo e intercessão, a graça de ser justo e de viver como bom cristão. Que o meu amor próprio nunca me faça cometer injustiça a quem quer que seja. Amém.
-
-Pai-nosso; Ave-Maria; Glória;
-Beato Padre Eustáquio, rogai por nós!`,
+			prayerOfDay: `Bondoso Padre Eustáquio, alcançai-me, por vosso exemplo e intercessão, a graça de ser justo e de viver como bom cristão. Que o meu amor próprio nunca me faça cometer injustiça a quem quer que seja. Amém.`,
 		},
 		{
 			day: 7,
 			title: 'Padre Eustáquio e a virtude da fortaleza',
 			meditation: `Não faltaram empecilhos e sofrimentos na vida de Padre Eustáquio. Durante o tempo de seminário, por conta dos estudos; enquanto sacerdote pelas sacrificantes transferências e até mesmo na doença penosa e a morte, humanamente falando, prematura. Mas, tudo isso foi aceito por ele com coragem e submissão, demonstrando bem claramente a sua grande fortaleza de alma.`,
-			prayerOfDay: `Alcançai-me, meu amigo Padre Eustáquio, por sua intercessão junto a Deus, a fortaleza de alma e a coragem para enfrentar as dificuldades da vida e para carregar as cruzes com generosa submissão à vontade de Deus. Amém.
-
-Pai-nosso; Ave-Maria; Glória;
-Beato Padre Eustáquio, rogai por nós!`,
+			prayerOfDay: `Alcançai-me, meu amigo Padre Eustáquio, por sua intercessão junto a Deus, a fortaleza de alma e a coragem para enfrentar as dificuldades da vida e para carregar as cruzes com generosa submissão à vontade de Deus. Amém.`,
 		},
 		{
 			day: 8,
 			title: 'Padre Eustáquio e a virtude da temperança',
 			meditation: `Pelos votos, Padre Eustáquio consagrou-se, por completo, ao serviço de Deus e das almas. Evitava tudo o que, mesmo de leve, podia pôr em perigo seu sacerdócio. Pela temperança praticada conseguiu dominar por completo a sua natureza. Era sóbrio no comer, não tinha apego à coisa alguma e cedia, com grande generosidade, presentes particulares para utilidade de outros, principalmente em benefício dos pobres.`,
-			prayerOfDay: `Alcançai-me, Padre Eustáquio, por vosso exemplo e intercessão, a prática da temperança. Ajudai-me em tudo a não ser egoísta e comodista. Que eu saiba compreender o valor da mortificação e praticá-la com generosidade na luta cotidiana da vida. Amém
-
-Pai-nosso; Ave-Maria; Glória;
-Beato Padre Eustáquio, rogai por nós!`,
+			prayerOfDay: `Alcançai-me, Padre Eustáquio, por vosso exemplo e intercessão, a prática da temperança. Ajudai-me em tudo a não ser egoísta e comodista. Que eu saiba compreender o valor da mortificação e praticá-la com generosidade na luta cotidiana da vida. Amém`,
 		},
 		{
 			day: 9,
