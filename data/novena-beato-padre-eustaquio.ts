@@ -11,7 +11,7 @@ export const beatoPadreEustaquioNovena = {
 	experience:
 		'Para uma experiência especial, considere iniciar sua novena no dia 21 de agosto, terminando no dia 30 de agosto.',
 	textColor: 'text-amber-800',
-	image: '/images/eustaquio.jpg',
+	image: '/images/eustaquio.png',
 	initialPrayer: `Em nome do Pai e do Filho e do Espírito Santo. Amém!
 
 Bondoso Padre Eustáquio, grande amigo e benfeitor das almas sofredoras, alcançai-me por vossa intercessão, junto a Deus, a graça que tanto almejo:
