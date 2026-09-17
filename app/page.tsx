@@ -6,6 +6,7 @@ import { ptBR } from 'date-fns/locale';
 import { useNovenaStore } from '../store/useNovenaStore';
 import { novenas } from '../data';
 import { NovenaInfoCard } from '../components/NovenaInfoCard';
+import { NovenaTransfer } from '../components/NovenaTransfer';
 
 export default function HomePage() {
 	const router = useRouter();
@@ -75,25 +76,29 @@ export default function HomePage() {
 						Gerencie suas novenas ativas e inicie novas jornadas espirituais.
 					</p>
 				</div>
-				<button
-					onClick={() => setShowCreateForm(!showCreateForm)}
-					className="w-full sm:w-auto px-4 py-3 sm:py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 font-medium"
-				>
-					<svg
-						className="w-5 h-5"
-						fill="none"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
+				<div className="flex w-full flex-col gap-2 sm:w-auto sm:items-end">
+					<NovenaTransfer />
+					<button
+						type="button"
+						onClick={() => setShowCreateForm(!showCreateForm)}
+						className="w-full px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 font-medium sm:w-auto sm:py-2"
 					>
-						<path
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							strokeWidth={2}
-							d="M12 4v16m8-8H4"
-						/>
-					</svg>
-					Nova Novena
-				</button>
+						<svg
+							className="w-5 h-5"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth={2}
+								d="M12 4v16m8-8H4"
+							/>
+						</svg>
+						Nova Novena
+					</button>
+				</div>
 			</div>
 
 			{/* Tabs de navegação */}

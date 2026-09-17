@@ -1,14 +1,15 @@
 'use client';
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-
-interface NovenaInstance {
-	id: string;
-	type: string;
-	startDate: string;
-	completedDays: number[];
-	createdAt: string;
-}
+import {
+	createTransferFile,
+	mergeProgress,
+	normalizePersistedState,
+	parseTransferText,
+	type ImportResult,
+	type NovenaInstance,
+	type NovenaProgressState,
+} from './novenaTransfer';
 
 interface NovenaState {
 	novenas: NovenaInstance[];
@@ -18,6 +19,8 @@ interface NovenaState {
 	setSelectedDay: (novenaId: string, day: number | null) => void;
 	deleteNovena: (novenaId: string) => void;
 	getNovena: (novenaId: string) => NovenaInstance | undefined;
+	exportProgress: () => ReturnType<typeof createTransferFile>;
+	importProgress: (text: string) => ImportResult;
 }
 
 export const useNovenaStore = create<NovenaState>()(
@@ -64,7 +67,27 @@ export const useNovenaStore = create<NovenaState>()(
 			getNovena: (novenaId) => {
 				return get().novenas.find((n) => n.id === novenaId);
 			},
+			exportProgress: () => {
+				const { novenas, selectedDay } = get();
+				return createTransferFile({ novenas, selectedDay });
+			},
+			importProgress: (text) => {
+				const incoming = parseTransferText(text);
+				const merged = mergeProgress(get(), incoming);
+				set(merged.state);
+				return {
+					...merged,
+					ignoredCount: incoming.ignoredCount,
+					warnings: incoming.warnings,
+				};
+			},
 		}),
-		{ name: 'novenas-progress' },
+		{
+			name: 'novenas-progress',
+			version: 1,
+			migrate: (persistedState) => {
+				return normalizePersistedState(persistedState) as NovenaProgressState;
+			},
+		},
 	),
 );
